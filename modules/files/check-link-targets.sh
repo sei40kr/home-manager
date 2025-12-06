@@ -45,7 +45,7 @@ for sourcePath in "$@" ; do
       fi
     else
       # Fail if nothing else works
-      collisionErrors+=("Existing file '$targetPath' would be clobbered")
+      collisionErrors+=("Existing file '$targetPath' is in the way of '$sourcePath'")
     fi
   fi
 done
